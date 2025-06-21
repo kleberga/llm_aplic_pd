@@ -4,3 +4,7 @@ streamlit < 1.33.99
 streamlit-folium < 0.19.99
 jupyter
 pandas
+altair==4.2.2
+transformers
+tf-keras
+tensorflow
