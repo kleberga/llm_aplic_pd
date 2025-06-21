@@ -27,7 +27,7 @@ with col1:
 # modelo para detectar prompt injection
 detector = pipeline(
     "zero-shot-classification",
-    model="facebook/bart-large-mnli"  # Modelo NLI para detecção de intenção
+    model="facebook/bart-large-mnli"
 )
 
 # função para detectar prompt injection
@@ -48,7 +48,6 @@ def safe_agent(question):
 
 if button:
     if request:
-        # sites = agent.get_tips(request)
         sites = safe_agent(request)
         container.write(sites["learning_sites"])
 
