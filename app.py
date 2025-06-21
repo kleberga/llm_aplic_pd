@@ -17,7 +17,7 @@ agent = Agent("AIzaSyCbWuENZJLpPx82w-Ju9Qd1a4xHqyi45lo")
 col1, col2 = st.columns(2)
 
 with col1:
-    request = st.text_area("Descreva o assunto que você deseja aprender mais, em português.")
+    request = st.text_area("Descreva o assunto que você deseja aprender, em português.")
     button = st.button("Obter as sugestões")
     box = st.container()
     with box:
